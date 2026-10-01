@@ -116,7 +116,16 @@ Consider scenarios such as:
 
 Deploy the solution to a publicly reachable test environment. Railway is preferred, but another reasonable platform is acceptable.
 
+Your submission must include:
+
+- a usable web interface for the adviser workflow, and
+- a reachable backend extraction endpoint.
+
+The frontend and backend may use separate deployment URLs if you prefer; document both clearly in `ASSESSMENT_SUBMISSION.md`.
+
 Secrets must not be committed to GitHub.
+
+You may use any LLM/AI provider you can reasonably integrate. You are responsible for configuring provider credentials in your local/deployed environment. If you do not have access to an AI provider, tell us before starting so we can provide a temporary assessment credential separately. Do not put credentials in source code, documentation, commits, screenshots, or logs.
 
 ## Deliverables
 
@@ -170,8 +179,10 @@ npm run dev
 
 ### Tests
 
+From the repository root:
+
 ```bash
-dotnet test
+dotnet test tests/Ibernia.Assessment.Api.Tests/Ibernia.Assessment.Api.Tests.csproj
 ```
 
 Good luck. We are interested in how you work as much as the final code.
