@@ -52,7 +52,7 @@ You own the full delivery lifecycle:
 3. Propose a lightweight technical design.
 4. Implement the feature.
 5. Add appropriate tests.
-6. Open a pull request with a useful description.
+6. Work in your own private repository and open a pull request there with a useful description.
 7. Configure CI so the relevant checks run automatically.
 8. Deploy the application.
 9. Verify the deployed feature works.
@@ -127,11 +127,17 @@ Secrets must not be committed to GitHub.
 
 You may use any LLM/AI provider you can reasonably integrate. You are responsible for configuring provider credentials in your local/deployed environment. If you do not have access to an AI provider, tell us before starting so we can provide a temporary assessment credential separately. Do not put credentials in source code, documentation, commits, screenshots, or logs.
 
+## Submission repository
+
+Do **not** open your solution as a pull request against this public starter repository.
+
+Create your own **private** repository from this starter, complete the assessment there, and give the Ibernia evaluator access to that repository. Open your assessment pull request inside your private repository so we can review your branch, commits, PR description, and CI history without exposing your solution to future candidates.
+
 ## Deliverables
 
 Submit:
 
-- GitHub pull request
+- private GitHub repository and pull request
 - deployed URL
 - `docs/DESIGN.md`
 - `AI_WORKLOG.md`
